@@ -1,0 +1,27 @@
+{
+  "name": "nodepay-airdrop-bot",
+  "version": "1.0.0",
+  "description": "A bot for automating Nodepay airdrop interactions, including session management and pinging with proxy support.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "Nodepay",
+    "Airdrop",
+    "Bot",
+    "Automation",
+    "Proxy",
+    "Ping",
+    "Crypto"
+  ],
+  "author": "dante4rt",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "colors": "^1.4.0",
+    "inquirer": "^8.2.6",
+    "winston": "^3.17.0"
+  }
+}
