@@ -14,11 +14,11 @@ async function readLines(filename) {
 }
 
 function displayHeader() {
-  process.stdout.write('\x1Bc');
+  process.stdout.write('\x1Bc');  // Clear the console screen (optional)
   console.log('========================================'.cyan);
-  console.log('=          Nodepay Airdrop Bot         ='.cyan);
-  console.log('=     Created by CryptoAirdropHindi      ='.cyan);
-  console.log('=    https://t.me/Crypto_airdropHM     ='.cyan);
+  console.log('=          Nodepay Airdrop Bot         ='.cyan);  // Title stays the same, or replace if needed
+  console.log('=     Created by CryptoAirdropHindi     ='.cyan);  // Updated creator info
+  console.log('=    https://t.me/Crypto_airdropHM     ='.cyan);  // Updated contact info
   console.log('========================================'.cyan);
   console.log();
 }
