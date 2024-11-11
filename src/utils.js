@@ -11,6 +11,17 @@ async function readLines(filename) {
   const lines = [];
   for await (const line of rl) lines.push(line.trim());
   return lines;
+}
+
+function displayHeader() {
+  process.stdout.write('\x1Bc');
+  console.log('========================================'.cyan);
+  console.log('=          Nodepay Airdrop Bot         ='.cyan);
+  console.log('=     Created by CryptoAirdropHindi      ='.cyan);
+  console.log('=    https://t.me/Crypto_airdropHM     ='.cyan);
+  console.log('========================================'.cyan);
+  console.log();
+}
 
 async function askAccountType() {
   const answers = await inquirer.prompt([
