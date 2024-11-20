@@ -34,7 +34,12 @@ class Bot {
         }
       }, this.config.retryInterval);
 
-      process.on('SIGINT', () => clearInterval(interval));
+      if (!process.listenerCount('SIGINT')) {
+        process.once('SIGINT', () => {
+          clearInterval(interval);
+          console.log('\n👋 Shutting down...');
+        });
+      }
     } catch (error) {
       console.log(`❌ ${'Connection error'.red}: ${error.message}`);
       this.logger.error('Connection error', { error: error.message, proxy });
